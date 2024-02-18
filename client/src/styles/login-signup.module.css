@@ -1,0 +1,157 @@
+.login_form_container{
+    position: relative;
+    width: 400px;
+    height: 470px;
+    max-width: 400px;
+    max-height: 470px;
+    background: #040717;
+    border-radius: 50px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.login_form_container::before{
+    
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, #ee00ff);
+    animation: rotate_border 6s linear infinite;
+
+}
+.login_form_container::after{
+    
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+    animation: rotate_border 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes rotate_border{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.login_form{
+    position: absolute;
+    content: '';
+    background-color: #0c1022;
+    border-radius: 50px 5px;
+    inset: 5px;
+    padding: 50px 40px;
+    z-index: 10;
+    color: #00ccff;
+
+} 
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.input_group{
+    margin-top: 40px;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.input_text{
+    width: 95%;
+    height: 30px;
+    padding-bottom: 14px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #00ccff;
+    font-size: 20px;
+    padding-left: 10px;
+    color: #00ccff;
+
+}
+
+
+.input_text::placeholder{
+    font-size: 15px;
+    font-weight: bolder;
+    color: #00ccff52;
+    letter-spacing: 1px;
+
+}
+
+.input_text:hover{
+    border-bottom-color: #ee00ff;
+}
+
+.input_text:hover::placeholder{
+    font-size: 15px;
+    color: #ee00ff;
+    letter-spacing: 1px;
+}
+
+
+.footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer Link{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.underline{
+    text-decoration:underline;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.glowIcon {
+    text-shadow: 0 0 10px #00ccff;
+
+}
+
+
+/* for rignup design */
+
+.signup_form_container{
+    position: relative;
+    width: 500px;
+    height: 570px;
+    max-width: 500px;
+    max-height: 570px;
+    background: #040717;
+    border-radius: 50px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.signup_form_container::before{
+    
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, #ee00ff);
+    animation: rotate_border 6s linear infinite;
+
+}
+.signup_form_container::after{
+    
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+    animation: rotate_border 6s linear infinite;
+    animation-delay: -3s;
+}
